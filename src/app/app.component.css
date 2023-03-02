@@ -1,0 +1,56 @@
+.body { 
+	color: #421; 
+	font-weight: bold; 
+	font-size: 18px; 
+	font-family: "Courier New"; 
+    background:rgb(223 247 229); 
+    content: '';
+    background-repeat: no-repeat; 
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.content {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+#main { 
+    position: fixed;
+    width: 400px;
+    border: 1px solid #421;
+    box-sizing: content-box;
+    box-shadow: 1px 1px 20px 20px grey;
+    padding: 40px;
+}
+
+.message {
+    border-radius: 50px;
+    margin: 0 15px 20px;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 20px;
+  }
+  .message.to {
+    background-color: #2095FE;
+    color: #fff;
+    margin-left: 100px;
+    text-align: right;
+  }
+  .message.from {
+    background-color: #E5E4E9;
+    color: #363636;
+    margin-right: 100px;
+  }
+  .message.to + .message.to,
+  .message.from + .message.from {
+    margin-top: -10px;
+  }
+
+  
