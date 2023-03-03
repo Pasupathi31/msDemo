@@ -20,3 +20,10 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: 'v14.20'
+- task: Npm@1
+  inputs:
+    command: 'install'
